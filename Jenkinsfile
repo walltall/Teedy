@@ -11,6 +11,11 @@ steps {
 bat 'mvn pmd:pmd'
 }
 }
+stage('test'){
+  steps{
+    bat 'mvn test'
+  }
+}
 }
 post {
 always {
